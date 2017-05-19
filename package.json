@@ -2,7 +2,7 @@
   "name": "process-stats",
   "description": "Resume stats for your process",
   "homepage": "https://github.com/Kikobeats/process-stats",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "author": {
     "name": "Kiko Beats",
