@@ -27,7 +27,7 @@ $ npm install process-stats --save
 ```js
 const procStats = require('process-stats')
 
-console.log(procStats());
+console.log(procStats())
 ```
 
 ## API
