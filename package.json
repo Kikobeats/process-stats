@@ -1,0 +1,54 @@
+{
+  "name": "process-stats",
+  "description": "Resume stats for your process",
+  "homepage": "https://github.com/Kikobeats/process-stats",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": {
+    "name": "Kiko Beats",
+    "url": "https://github.com/Kikobeats"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kikobeats/process-stats.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kikobeats/process-stats/issues"
+  },
+  "keywords": [],
+  "dependencies": {
+    "pretty-bytes": "~4.0.2",
+    "pretty-ms": "~2.1.0",
+    "toobusy-js": "~0.5.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "chalk": "latest",
+    "coveralls": "latest",
+    "git-dirty": "latest",
+    "mocha": "latest",
+    "nyc": "latest",
+    "should": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest"
+  },
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "clean": "rm -rf node_modules",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "standard-markdown && standard",
+    "pretest": "npm run lint",
+    "test": "nyc mocha"
+  },
+  "license": "MIT",
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
+  }
+}
