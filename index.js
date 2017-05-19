@@ -1,8 +1,10 @@
 'use strict'
 
 const _prettyBytes = require('pretty-bytes')
+const calcPercent = require('calc-percent')
 const _prettyMs = require('pretty-ms')
 const toobusy = require('toobusy-js')
+
 const os = require('os')
 
 const noop = val => val
@@ -30,9 +32,18 @@ function processStats (opts = {}) {
     eventLoop,
     load,
     loadNormalized,
-    memFree: prettyBytes(memFree),
-    memTotal: prettyBytes(memTotal),
-    memUsed: prettyBytes(memUsed),
+    memFree: {
+      value: prettyBytes(memFree),
+      percent: calcPercent(memFree, memTotal, {suffix: '%'})
+    },
+    memTotal: {
+      value: prettyBytes(memTotal),
+      percent: calcPercent(memTotal, memTotal, {suffix: '%'})
+    },
+    memUsed: {
+      value: prettyBytes(memUsed),
+      percent: calcPercent(memUsed, memTotal, {suffix: '%'})
+    },
     pid: process.pid,
     uptime: prettyMs(uptime)
   }
