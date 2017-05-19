@@ -14,7 +14,7 @@
 [![NPM Status](https://img.shields.io/npm/dm/process-stats.svg?style=flat-square)](https://www.npmjs.org/package/process-stats)
 [![Donate](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://paypal.me/Kikobeats)
 
-> Resume stats for your process
+> Human readable stats for your NodeJS process.
 
 ## Install
 
