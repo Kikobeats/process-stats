@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="demo.png" alt="process-stats">
+  <img src="demo.png" alt="process-stats" width=650>
   <br>
 </p>
 
