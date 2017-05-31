@@ -1,5 +1,8 @@
 language: node_js
 node_js:
-  - "node"
-  - "lts/*"
+  - '4'
+  - '5'
+  - lts/*
+  - '7'
+  - node
 after_success: npm run coveralls
