@@ -30,19 +30,6 @@ const procStats = require('process-stats')
 console.log(procStats())
 ```
 
-## API
-
-### procStats([options])
-
-#### options
-
-##### pretty
-
-Type: `boolean`<br>
-Default: `true`
-
-Print pretty units per each stat. Set `false` for get the raw value.
-
 ## License
 
 MIT © [Kiko Beats](https://github.com/Kikobeats).
