@@ -1,51 +1,64 @@
 'use strict'
 
-const _prettyBytes = require('pretty-bytes')
+const prettyBytes = require('pretty-bytes')
 const calcPercent = require('calc-percent')
-const _prettyMs = require('pretty-ms')
+const prettyMs = require('pretty-ms')
 const toobusy = require('toobusy-js')
-
 const os = require('os')
 
-const noop = val => val
+const round = n => Number(n.toFixed(2))
 
-function processStats (opts = {}) {
-  const {pretty = true} = opts
+const getStats = () => ({
+  uptime: process.uptime() * 1000,
+  memUsed: process.memoryUsage().rss,
+  memFree: os.freemem(),
+  memTotal: os.totalmem(),
+  cpus: os.cpus().length,
+  eventLoop: toobusy.lag(),
+  load: os.loadavg()
+})
 
-  const prettyMs = pretty ? _prettyMs : noop
-  const prettyBytes = pretty ? _prettyBytes : noop
-  const prettyDecimal = pretty ? n => n.toFixed(2) : noop
+const processStats = () => {
+  const {
+    uptime,
+    memUsed,
+    memFree,
+    memTotal,
+    cpus,
+    eventLoop,
+    load: rawLoad
+  } = getStats()
 
-  const uptime = process.uptime() * 1000
-  const memUsed = process.memoryUsage().rss
-  const memFree = os.freemem()
-  const memTotal = os.totalmem()
-
-  const cpus = os.cpus().length
-  const eventLoop = toobusy.lag()
-
-  const load = pretty ? os.loadavg().map(prettyDecimal) : os.loadavg()
-  const loadNormalized = load.map(load => prettyDecimal(load / cpus))
+  const load = rawLoad.map(round)
+  const loadNormalized = load.map(load => round(load / cpus))
 
   return {
     cpus,
     eventLoop,
-    load,
-    loadNormalized,
+    load: {
+      value: load,
+      normalized: loadNormalized
+    },
     memFree: {
-      value: prettyBytes(memFree),
+      value: memFree,
+      pretty: prettyBytes(memFree),
       percent: calcPercent(memFree, memTotal, {suffix: '%'})
     },
     memTotal: {
-      value: prettyBytes(memTotal),
+      value: memTotal,
+      pretty: prettyBytes(memTotal),
       percent: calcPercent(memTotal, memTotal, {suffix: '%'})
     },
     memUsed: {
-      value: prettyBytes(memUsed),
+      value: memUsed,
+      pretty: prettyBytes(memUsed),
       percent: calcPercent(memUsed, memTotal, {suffix: '%'})
     },
     pid: process.pid,
-    uptime: prettyMs(uptime)
+    uptime: {
+      value: uptime,
+      pretty: prettyMs(uptime)
+    }
   }
 }
 

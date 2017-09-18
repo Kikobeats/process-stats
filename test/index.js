@@ -1,7 +1,11 @@
 'use strict'
 
-const stats = require('..')
+const processStats = require('..')
 const chalk = require('chalk')
+
+const stats = processStats()
+console.log(stats)
+console.log()
 
 const {
   cpus,
@@ -13,7 +17,7 @@ const {
   memUsed,
   pid,
   uptime
-} = stats()
+} = stats
 
 const prettyArray = arr => {
   const separator = chalk.white(', ')
@@ -27,10 +31,10 @@ const prettyPercent = val => {
 
 console.log(`cpus           : ${chalk.gray(cpus)}`)
 console.log(`eventLoop      : ${chalk.gray(eventLoop)}`)
-console.log(`load           : ${prettyArray(load)}`)
-console.log(`loadNormalized : ${prettyArray(loadNormalized)}`)
-console.log(`memFree        : ${chalk.gray(memFree.value)} ${prettyPercent(memFree.percent)}`)
-console.log(`memUsed        : ${chalk.gray(memUsed.value)} ${prettyPercent(memUsed.percent)}`)
-console.log(`memTotal       : ${chalk.gray(memTotal.value)} ${prettyPercent(memTotal.percent)}`)
+console.log(`load           : ${prettyArray(load.value)}`)
+console.log(`loadNormalized : ${prettyArray(load.normalized)}`)
+console.log(`memFree        : ${chalk.gray(memFree.pretty)} ${prettyPercent(memFree.percent)}`)
+console.log(`memUsed        : ${chalk.gray(memUsed.pretty)} ${prettyPercent(memUsed.percent)}`)
+console.log(`memTotal       : ${chalk.gray(memTotal.pretty)} ${prettyPercent(memTotal.percent)}`)
 console.log(`pid            : ${chalk.gray(pid)}`)
-console.log(`uptime         : ${chalk.gray(uptime)}`)
+console.log(`uptime         : ${chalk.gray(uptime.pretty)}`)
