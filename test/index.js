@@ -1,21 +1,18 @@
 'use strict'
 
-const processStats = require('..')
 const chalk = require('chalk')
 
-const stats = processStats()
-console.log(stats)
-console.log()
+const {os, process} = require('..')
+
+const stats = Object.assign({}, os(), process())
 
 const {
-  cpus,
-  eventLoop,
-  load,
-  loadNormalized,
+  cpuUsage,
+  delay,
+  loadAvg,
   memFree,
   memTotal,
   memUsed,
-  pid,
   uptime
 } = stats
 
@@ -29,12 +26,10 @@ const prettyPercent = val => {
   return chalk.grey(str)
 }
 
-console.log(`cpus           : ${chalk.gray(cpus)}`)
-console.log(`eventLoop      : ${chalk.gray(eventLoop)}`)
-console.log(`load           : ${prettyArray(load.value)}`)
-console.log(`loadNormalized : ${prettyArray(load.normalized)}`)
+console.log(`delay          : ${chalk.gray(delay.pretty)}`)
+console.log(`loadAvg        : ${prettyArray(loadAvg.normalized)}`)
 console.log(`memFree        : ${chalk.gray(memFree.pretty)} ${prettyPercent(memFree.percent)}`)
 console.log(`memUsed        : ${chalk.gray(memUsed.pretty)} ${prettyPercent(memUsed.percent)}`)
 console.log(`memTotal       : ${chalk.gray(memTotal.pretty)} ${prettyPercent(memTotal.percent)}`)
-console.log(`pid            : ${chalk.gray(pid)}`)
 console.log(`uptime         : ${chalk.gray(uptime.pretty)}`)
+console.log(`cpuUsage       : ${chalk.gray(cpuUsage.pretty)}`)
