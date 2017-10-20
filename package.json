@@ -26,9 +26,9 @@
   ],
   "dependencies": {
     "calc-percent": "~1.0.1",
+    "event-loop-lag": "~1.3.0",
     "pretty-bytes": "~4.0.2",
-    "pretty-ms": "~2.1.0",
-    "toobusy-js": "~0.5.1"
+    "pretty-ms": "~2.1.0"
   },
   "devDependencies": {
     "chalk": "latest",
@@ -52,7 +52,7 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
     "pretest": "npm run lint",
-    "test": "nyc mocha"
+    "test": "node test"
   },
   "license": "MIT",
   "standard": {
