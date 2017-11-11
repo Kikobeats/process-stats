@@ -1,7 +1,5 @@
 # process-stats
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Kikobeats/process-stats.svg)](https://greenkeeper.io/)
-
 <p align="center">
   <br>
   <img src="demo.png" alt="process-stats" width=650>
