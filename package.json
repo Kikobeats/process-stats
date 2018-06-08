@@ -27,7 +27,7 @@
   "dependencies": {
     "calc-percent": "~1.0.1",
     "event-loop-lag": "~1.3.0",
-    "pretty-bytes": "~5.0.0",
+    "pretty-bytes": "~5.1.0",
     "pretty-ms": "~3.2.0"
   },
   "devDependencies": {
