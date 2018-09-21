@@ -2,7 +2,7 @@
 
 const chalk = require('chalk')
 
-const {os, process} = require('..')
+const { os, process } = require('..')
 
 const stats = Object.assign({}, os(), process())
 
