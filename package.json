@@ -49,6 +49,7 @@
     "node": ">= 6"
   },
   "files": [
+    "bin",
     "index.js",
     "lib"
   ],
