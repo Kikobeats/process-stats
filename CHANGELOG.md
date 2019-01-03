@@ -1,3 +1,10 @@
+<a name="3.0.4"></a>
+## 3.0.4 (2019-01-03)
+
+* Tweaks ([c06c355](https://github.com/kikobeats/process-stats/commit/c06c355))
+
+
+
 <a name="3.0.3"></a>
 ## 3.0.3 (2019-01-03)
 
