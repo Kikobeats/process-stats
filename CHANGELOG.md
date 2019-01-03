@@ -1,3 +1,10 @@
+<a name="3.0.3"></a>
+## 3.0.3 (2019-01-03)
+
+* Tweaks ([fb6897f](https://github.com/kikobeats/process-stats/commit/fb6897f))
+
+
+
 <a name="3.0.2"></a>
 ## 3.0.2 (2019-01-03)
 
