@@ -4,9 +4,7 @@
   "homepage": "https://github.com/Kikobeats/process-stats",
   "version": "3.0.3",
   "main": "index.js",
-  "bin": {
-    "process-stats": "./bin/index.js"
-  },
+  "bin": "bin/index.js",
   "author": {
     "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
