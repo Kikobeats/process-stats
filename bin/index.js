@@ -6,10 +6,8 @@ const output = require('neat-log/output')
 const neatLog = require('neat-log')
 const chalk = require('chalk')
 
-const { os, process } = require('..')
 const pkg = require('../package.json')
-
-const getStats = () => Object.assign({}, os(), process())
+const stats = require('..')
 
 const prettyArray = arr => {
   const separator = chalk.white(', ')
@@ -23,7 +21,7 @@ const prettyPercent = val => {
 
 const style = {
   minimal: () => {
-    const { uptime, cpu, delay, loadAvg, memTotal, memUsed } = getStats()
+    const { uptime, cpu, delay, loadAvg, memTotal, memUsed } = stats()
     return `${uptime.pretty} | cpu: ${chalk.gray(cpu)} | mem: ${chalk.gray(
       memUsed.pretty
     )} / ${chalk.gray(memTotal.pretty)} ${prettyPercent(
@@ -33,7 +31,7 @@ const style = {
     )}`
   },
   verbose: () => {
-    const { uptime, delay, loadAvg, memFree, memTotal, memUsed } = getStats()
+    const { uptime, delay, loadAvg, memFree, memTotal, memUsed } = stats()
 
     return `
     delay          : ${chalk.gray(delay.pretty)}
