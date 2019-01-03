@@ -1,3 +1,12 @@
+<a name="3.0.1"></a>
+## 3.0.1 (2019-01-03)
+
+* Refactor ([bae606b](https://github.com/kikobeats/process-stats/commit/bae606b))
+* Release 3.0.0 ([ed187ef](https://github.com/kikobeats/process-stats/commit/ed187ef))
+* Update scritps ([55910c2](https://github.com/kikobeats/process-stats/commit/55910c2))
+
+
+
 <a name="3.0.0"></a>
 # 3.0.0 (2019-01-03)
 
