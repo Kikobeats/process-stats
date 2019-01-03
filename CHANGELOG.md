@@ -1,3 +1,10 @@
+<a name="3.0.2"></a>
+## 3.0.2 (2019-01-03)
+
+* Add bin at files ([1fe5e3c](https://github.com/kikobeats/process-stats/commit/1fe5e3c))
+
+
+
 <a name="3.0.1"></a>
 ## 3.0.1 (2019-01-03)
 
