@@ -2,7 +2,7 @@
 
 <p align="center">
   <br>
-  <img src="demo.png" alt="process-stats" width=650>
+  <img src="demo.gif" alt="process-stats">
   <br>
 </p>
 
@@ -12,12 +12,26 @@
 [![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/process-stats.svg?style=flat-square)](https://david-dm.org/Kikobeats/process-stats#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/process-stats.svg?style=flat-square)](https://www.npmjs.org/package/process-stats)
 
-> Human readable stats for your NodeJS process.
+> Human readable stats for your Node.js process.
 
 ## Install
 
+### as package
+
 ```bash
 $ npm install process-stats --save
+```
+
+### as CLI
+
+```bash
+$ npm install process-stats --global
+```
+
+or
+
+```bash
+$ npx process-stats
 ```
 
 ## Usage
