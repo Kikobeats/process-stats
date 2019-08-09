@@ -1,3 +1,15 @@
+<a name="3.1.0"></a>
+# 3.1.0 (2019-08-09)
+
+* build: add website ([f2785e6](https://github.com/kikobeats/process-stats/commit/f2785e6))
+* build: meta tweaks ([c9872a8](https://github.com/kikobeats/process-stats/commit/c9872a8))
+* build: update meta ([d409b34](https://github.com/kikobeats/process-stats/commit/d409b34))
+* fix(package): update pretty-bytes to version 5.2.0 ([c619b70](https://github.com/kikobeats/process-stats/commit/c619b70))
+* fix(package): update pretty-ms to version 5.0.0 ([7617134](https://github.com/kikobeats/process-stats/commit/7617134))
+* [ImgBot] Optimize images ([4cf750b](https://github.com/kikobeats/process-stats/commit/4cf750b))
+
+
+
 <a name="3.0.4"></a>
 ## 3.0.4 (2019-01-03)
 
