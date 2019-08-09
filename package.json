@@ -1,7 +1,7 @@
 {
   "name": "process-stats",
   "description": "Resume stats for your process",
-  "homepage": "https://github.com/Kikobeats/process-stats",
+  "homepage": "https://nicedoc.io/kikobeats/process-stats",
   "version": "3.0.4",
   "main": "index.js",
   "bin": {
