@@ -1,3 +1,12 @@
+<a name="3.1.1"></a>
+## 3.1.1 (2019-08-10)
+
+* fix: typo ([b55de7c](https://github.com/kikobeats/process-stats/commit/b55de7c))
+* build: add demo ([51ed157](https://github.com/kikobeats/process-stats/commit/51ed157))
+* build: update meta ([b7ebbbd](https://github.com/kikobeats/process-stats/commit/b7ebbbd))
+
+
+
 <a name="3.1.0"></a>
 # 3.1.0 (2019-08-09)
 
