@@ -1,6 +1,6 @@
 {
   "name": "process-stats",
-  "description": "Display dynamic real-time information about running Node.js processes",
+  "description": "Display dynamic real-time information about running Node.js process",
   "homepage": "https://nicedoc.io/kikobeats/process-stats",
   "version": "3.1.0",
   "main": "index.js",

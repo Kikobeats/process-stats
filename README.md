@@ -12,7 +12,7 @@
 [![Dev Dependencies Status](https://img.shields.io/david/dev/Kikobeats/process-stats.svg?style=flat-square)](https://david-dm.org/Kikobeats/process-stats#info=devDependencies)
 [![NPM Status](https://img.shields.io/npm/dm/process-stats.svg?style=flat-square)](https://www.npmjs.org/package/process-stats)
 
-> Display dynamic real-time information about running Node.js processes.
+> Display dynamic real-time information about running Node.js process.
 
 ## Install
 
