@@ -1,6 +1,6 @@
 {
   "name": "process-stats",
-  "description": "Resume stats for your process",
+  "description": "Display dynamic real-time information about running Node.js processes",
   "homepage": "https://nicedoc.io/kikobeats/process-stats",
   "version": "3.1.0",
   "main": "index.js",
@@ -19,12 +19,18 @@
     "url": "https://github.com/Kikobeats/process-stats/issues"
   },
   "keywords": [
+    "display",
+    "dynamic",
     "eventloop",
     "human",
+    "information",
     "memory",
+    "node.js",
     "pretty",
     "process",
+    "real-time",
     "stats",
+    "top",
     "uptime"
   ],
   "dependencies": {
