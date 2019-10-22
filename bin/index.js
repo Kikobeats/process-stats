@@ -15,7 +15,7 @@ const prettyArray = arr => {
 }
 
 const prettyPercent = val => {
-  const str = `${chalk.white('(')}${val}${chalk.white(')')}`
+  const str = `${chalk.white('(')}${val}%${chalk.white(')')}`
   return chalk.grey(str)
 }
 
