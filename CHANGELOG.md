@@ -1,3 +1,10 @@
+<a name="3.1.3"></a>
+## 3.1.3 (2019-10-22)
+
+* build: percent is a number ([ee057ba](https://github.com/kikobeats/process-stats/commit/ee057ba))
+
+
+
 <a name="3.1.2"></a>
 ## 3.1.2 (2019-10-22)
 
