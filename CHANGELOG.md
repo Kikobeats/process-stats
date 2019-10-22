@@ -1,3 +1,10 @@
+<a name="3.1.2"></a>
+## 3.1.2 (2019-10-22)
+
+* build: don't expose cpus ([c8bcaa6](https://github.com/kikobeats/process-stats/commit/c8bcaa6))
+
+
+
 <a name="3.1.1"></a>
 ## 3.1.1 (2019-08-10)
 
