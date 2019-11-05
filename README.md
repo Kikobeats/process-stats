@@ -40,10 +40,10 @@ $ npx process-stats
 const procStats = require('process-stats')()
 
 // print collector stats
-console.log(procStats()) 
+console.log(procStats())
 
 // destroy collector
-console.log(procStats.destroy()) 
+console.log(procStats.destroy())
 ```
 
 ## License
