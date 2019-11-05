@@ -1,3 +1,10 @@
+<a name="3.2.0"></a>
+# 3.2.0 (2019-11-05)
+
+* feat: expose a way for destroying the collector ([87f92c1](https://github.com/kikobeats/process-stats/commit/87f92c1))
+
+
+
 <a name="3.1.3"></a>
 ## 3.1.3 (2019-10-22)
 
