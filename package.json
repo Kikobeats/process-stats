@@ -48,6 +48,7 @@
     "mocha": "latest",
     "nyc": "latest",
     "should": "latest",
+    "signal-exit": "latest",
     "standard": "latest",
     "standard-markdown": "latest"
   },

@@ -3,11 +3,14 @@
 'use strict'
 
 const output = require('neat-log/output')
+const onExit = require('signal-exit')
 const neatLog = require('neat-log')
 const chalk = require('chalk')
 
 const pkg = require('../package.json')
-const stats = require('..')
+const stats = require('..')()
+
+onExit(stats.destroy)
 
 const prettyArray = arr => {
   const separator = chalk.white(', ')

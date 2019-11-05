@@ -37,9 +37,13 @@ $ npx process-stats
 ## Usage
 
 ```js
-const procStats = require('process-stats')
+const procStats = require('process-stats')()
 
-console.log(procStats())
+// print collector stats
+console.log(procStats()) 
+
+// destroy collector
+console.log(procStats.destroy()) 
 ```
 
 ## License

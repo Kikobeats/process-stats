@@ -1,8 +1,13 @@
 'use strict'
 
-const os = require('./lib/os')
-const process = require('./lib/process')
+const createTop = require('process-top')
 
-module.exports = () => Object.assign({}, os(), process())
-module.exports.os = os
-module.exports.process = process
+const process = require('./lib/process')
+const os = require('./lib/os')
+
+module.exports = opts => {
+  const top = createTop(opts)
+  const fn = () => ({ ...os(top), ...process(top) })
+  fn.destroy = top.destroy
+  return fn
+}
