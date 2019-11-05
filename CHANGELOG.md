@@ -1,3 +1,12 @@
+<a name="3.2.1"></a>
+## 3.2.1 (2019-11-05)
+
+* fix: linter ([e1acc13](https://github.com/kikobeats/process-stats/commit/e1acc13))
+* Release 3.2.0 ([dc7d65c](https://github.com/kikobeats/process-stats/commit/dc7d65c))
+* feat: expose a way for destroying the collector ([87f92c1](https://github.com/kikobeats/process-stats/commit/87f92c1))
+
+
+
 <a name="3.2.0"></a>
 # 3.2.0 (2019-11-05)
 
