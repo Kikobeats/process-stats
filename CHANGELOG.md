@@ -1,3 +1,10 @@
+<a name="3.2.2"></a>
+## 3.2.2 (2019-11-25)
+
+* build: update dependencies ([1272acf](https://github.com/kikobeats/process-stats/commit/1272acf))
+
+
+
 <a name="3.2.1"></a>
 ## 3.2.1 (2019-11-05)
 
