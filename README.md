@@ -46,6 +46,10 @@ console.log(procStats())
 console.log(procStats.destroy())
 ```
 
+## Related
+
+- [pidusage](https://github.com/soyuka/pidusage): Cross-platform process cpu % and memory usage of a PID.
+
 ## License
 
 MIT © [Kiko Beats](https://github.com/Kikobeats).
