@@ -1,3 +1,10 @@
+## 3.3.0 (2020-01-20)
+
+* Bump meow from 5.0.0 to 6.0.0 ([c9cbe10](https://github.com/kikobeats/process-stats/commit/c9cbe10))
+* Update README.md ([9540904](https://github.com/kikobeats/process-stats/commit/9540904))
+
+
+
 <a name="3.2.2"></a>
 ## 3.2.2 (2019-11-25)
 
