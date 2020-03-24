@@ -1,3 +1,9 @@
+## <small>3.3.1 (2020-03-24)</small>
+
+* fix: dependencies ([22a456f](https://github.com/kikobeats/process-stats/commit/22a456f))
+
+
+
 ## 3.3.0 (2020-01-20)
 
 * Bump meow from 5.0.0 to 6.0.0 ([c9cbe10](https://github.com/kikobeats/process-stats/commit/c9cbe10))
