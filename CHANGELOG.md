@@ -1,3 +1,12 @@
+## <small>3.3.2 (2020-03-24)</small>
+
+* Bump meow from 6.0.1 to 6.1.0 ([a76b6c2](https://github.com/kikobeats/process-stats/commit/a76b6c2))
+* Bump pretty-ms from 5.1.0 to 6.0.0 ([4d7d901](https://github.com/kikobeats/process-stats/commit/4d7d901))
+* Release 3.3.1 ([2c98ba3](https://github.com/kikobeats/process-stats/commit/2c98ba3))
+* fix: dependencies ([f47888b](https://github.com/kikobeats/process-stats/commit/f47888b))
+
+
+
 ## <small>3.3.1 (2020-03-24)</small>
 
 * fix: dependencies ([22a456f](https://github.com/kikobeats/process-stats/commit/22a456f))
