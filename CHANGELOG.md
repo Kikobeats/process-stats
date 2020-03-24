@@ -1,3 +1,10 @@
+## <small>3.3.4 (2020-03-24)</small>
+
+* Release 3.3.3 ([78aa7e4](https://github.com/kikobeats/process-stats/commit/78aa7e4))
+* fix: dependencies ([9c90ad4](https://github.com/kikobeats/process-stats/commit/9c90ad4))
+
+
+
 ## <small>3.3.3 (2020-03-24)</small>
 
 * fix: dependencies ([9c90ad4](https://github.com/kikobeats/process-stats/commit/9c90ad4))
