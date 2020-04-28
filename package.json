@@ -11,6 +11,12 @@
     "name": "Kiko Beats",
     "url": "https://github.com/Kikobeats"
   },
+  "contributors": [
+    {
+      "name": "Kiko Beats",
+      "email": "josefrancisco.verdu@gmail.com"
+    }
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kikobeats/process-stats.git"
@@ -44,22 +50,22 @@
     "signal-exit": "~3.0.2"
   },
   "devDependencies": {
-    "coveralls": "latest",
-    "git-dirty": "latest",
-    "mocha": "latest",
-    "nyc": "latest",
-    "should": "latest",
-    "standard": "latest",
-    "standard-markdown": "latest",
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "ci-publish": "latest",
     "conventional-github-releaser": "latest",
+    "coveralls": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
+    "git-dirty": "latest",
     "husky": "latest",
     "lint-staged": "latest",
+    "mocha": "latest",
     "npm-check-updates": "latest",
+    "nyc": "latest",
+    "should": "latest",
+    "standard": "latest",
+    "standard-markdown": "latest",
     "standard-version": "latest"
   },
   "engines": {
@@ -72,26 +78,20 @@
   ],
   "scripts": {
     "clean": "rm -rf node_modules",
+    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "lint": "standard-markdown && standard",
-    "pretest": "npm run lint",
-    "test": "exit 0",
-    "contributors": "(git-authors-cli && finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "postrelease": "npm run release:tags && npm run release:github && ci-publish",
     "prerelease": "npm run update:check && npm run contributors",
+    "pretest": "npm run lint",
+    "release": "standard-version -a",
     "release:github": "conventional-github-releaser -p angular",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "release": "standard-version -a",
-    "update:check": "ncu -- --error-level 2",
-    "update": "ncu -u"
+    "test": "exit 0",
+    "update": "ncu -u",
+    "update:check": "ncu -- --error-level 2"
   },
   "license": "MIT",
-  "standard": {
-    "globals": [
-      "describe",
-      "it"
-    ]
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -106,6 +106,12 @@
   "lint-staged": {
     "package.json": [
       "finepack"
+    ]
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
     ]
   }
 }
