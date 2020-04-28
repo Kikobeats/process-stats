@@ -1,30 +1,29 @@
-## <small>3.3.4 (2020-03-24)</small>
+# Changelog
 
-* Release 3.3.3 ([78aa7e4](https://github.com/kikobeats/process-stats/commit/78aa7e4))
-* fix: dependencies ([9c90ad4](https://github.com/kikobeats/process-stats/commit/9c90ad4))
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
-
-
-## <small>3.3.3 (2020-03-24)</small>
-
-* fix: dependencies ([9c90ad4](https://github.com/kikobeats/process-stats/commit/9c90ad4))
+## 3.4.0 (2020-04-28)
 
 
+### Features
 
-## <small>3.3.2 (2020-03-24)</small>
-
-* Bump meow from 6.0.1 to 6.1.0 ([a76b6c2](https://github.com/kikobeats/process-stats/commit/a76b6c2))
-* Bump pretty-ms from 5.1.0 to 6.0.0 ([4d7d901](https://github.com/kikobeats/process-stats/commit/4d7d901))
-* Release 3.3.1 ([2c98ba3](https://github.com/kikobeats/process-stats/commit/2c98ba3))
-* fix: dependencies ([f47888b](https://github.com/kikobeats/process-stats/commit/f47888b))
+* expose a way for destroying the collector ([87f92c1](https://github.com/kikobeats/process-stats/commit/87f92c1a5eee5c14be8c6dbd01073c21f07616e4))
 
 
+### Bug Fixes
 
-## <small>3.3.1 (2020-03-24)</small>
-
-* fix: dependencies ([22a456f](https://github.com/kikobeats/process-stats/commit/22a456f))
-
-
+* dependencies ([9c90ad4](https://github.com/kikobeats/process-stats/commit/9c90ad482727c0cad4867b4a7d59b25aaf21f7ac))
+* dependencies ([f47888b](https://github.com/kikobeats/process-stats/commit/f47888b697758fdc9b5477d3c8fcce32254ab363))
+* linter ([e1acc13](https://github.com/kikobeats/process-stats/commit/e1acc13d1fdefcaeca6c6cb05f6789592a1a1c35))
+* typo ([b55de7c](https://github.com/kikobeats/process-stats/commit/b55de7c86df1468a6cfa29940cfb3e4a10f303e5))
+* **package:** update event-loop-lag to version 1.4.0 ([4a89217](https://github.com/kikobeats/process-stats/commit/4a892178324bec2b02bf37df29fe48680ca12722))
+* **package:** update pretty-bytes to version 5.0.0 ([9ac2b86](https://github.com/kikobeats/process-stats/commit/9ac2b86b07c8fc57c063ecd7c428b452078a9e32))
+* **package:** update pretty-bytes to version 5.1.0 ([5c3e20b](https://github.com/kikobeats/process-stats/commit/5c3e20b4e58d247e491839237f77e5cd525d3057))
+* **package:** update pretty-bytes to version 5.2.0 ([c619b70](https://github.com/kikobeats/process-stats/commit/c619b70cc3ae5bb049f07795321015ac39a13213))
+* **package:** update pretty-ms to version 3.1.0 ([deb99de](https://github.com/kikobeats/process-stats/commit/deb99de2b02c710fe8d29e194fe39fa561363192))
+* **package:** update pretty-ms to version 3.2.0 ([ddf109a](https://github.com/kikobeats/process-stats/commit/ddf109aa32c665f52e8dcefc7102fa436c69e473))
+* **package:** update pretty-ms to version 4.0.0 ([4d5dad8](https://github.com/kikobeats/process-stats/commit/4d5dad8c88db6552c37bfbae8ace576ff00eb0d5))
+* **package:** update pretty-ms to version 5.0.0 ([7617134](https://github.com/kikobeats/process-stats/commit/7617134dd09092a06b1551b592adfd8734a958fd))
 
 ## 3.3.0 (2020-01-20)
 
@@ -181,6 +180,3 @@
 
 * First commit ([0c59749](https://github.com/kikobeats/process-stats/commit/0c59749))
 * Fix linter ([02f4b8e](https://github.com/kikobeats/process-stats/commit/02f4b8e))
-
-
-
