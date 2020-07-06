@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.5.0](https://github.com/kikobeats/process-stats/compare/v3.4.3...v3.5.0) (2020-07-06)
+
+
+### Features
+
+* average cpu usage ([6d1cfdc](https://github.com/kikobeats/process-stats/commit/6d1cfdcd97f4894deaa5876be5acdbf2f504b1e4))
+
 ### [3.4.3](https://github.com/kikobeats/process-stats/compare/v3.4.2...v3.4.3) (2020-06-10)
 
 ### [3.4.2](https://github.com/kikobeats/process-stats/compare/v3.4.1...v3.4.2) (2020-05-28)
