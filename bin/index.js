@@ -25,13 +25,11 @@ const prettyPercent = val => {
 const style = {
   minimal: () => {
     const { uptime, cpu, delay, loadAvg, memTotal, memUsed } = stats()
-    return `${uptime.pretty} | cpu: ${chalk.gray(cpu)} | mem: ${chalk.gray(
+    return `${uptime.pretty} | cpu: ${chalk.gray(cpu.pretty)} | mem: ${chalk.gray(
       memUsed.pretty
-    )} / ${chalk.gray(memTotal.pretty)} ${prettyPercent(
-      memUsed.percent
-    )} | delay: ${chalk.gray(delay.pretty)} | loadavg: ${prettyArray(
-      loadAvg.normalized
-    )}`
+    )} / ${chalk.gray(memTotal.pretty)} ${prettyPercent(memUsed.percent)} | delay: ${chalk.gray(
+      delay.pretty
+    )} | loadavg: ${prettyArray(loadAvg.normalized)}`
   },
   verbose: () => {
     const { uptime, delay, loadAvg, memFree, memTotal, memUsed } = stats()
@@ -39,15 +37,9 @@ const style = {
     return `
     delay          : ${chalk.gray(delay.pretty)}
     loadAvg        : [${prettyArray(loadAvg.normalized)}]
-    memFree        : ${chalk.gray(memFree.pretty)} ${prettyPercent(
-  memFree.percent
-)}
-    memUsed        : ${chalk.gray(memUsed.pretty)} ${prettyPercent(
-  memUsed.percent
-)}
-    memTotal       : ${chalk.gray(memTotal.pretty)} ${prettyPercent(
-  memTotal.percent
-)}
+    memFree        : ${chalk.gray(memFree.pretty)} ${prettyPercent(memFree.percent)}
+    memUsed        : ${chalk.gray(memUsed.pretty)} ${prettyPercent(memUsed.percent)}
+    memTotal       : ${chalk.gray(memTotal.pretty)} ${prettyPercent(memTotal.percent)}
     uptime         : ${chalk.gray(uptime.pretty)}`
   }
 }
