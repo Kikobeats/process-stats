@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.5.4](https://github.com/kikobeats/process-stats/compare/v3.5.3...v3.5.4) (2020-11-04)
+
 ### [3.5.3](https://github.com/kikobeats/process-stats/compare/v3.5.2...v3.5.3) (2020-10-30)
 
 ### [3.5.2](https://github.com/kikobeats/process-stats/compare/v3.5.1...v3.5.2) (2020-08-31)
