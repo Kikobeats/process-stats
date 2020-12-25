@@ -42,7 +42,7 @@
   "dependencies": {
     "calc-percent": "~1.0.1",
     "chalk": "~4.1.0",
-    "meow": "~8.0.0",
+    "meow": "~8.1.0",
     "neat-log": "~3.1.0",
     "pretty-bytes": "~5.5.0",
     "pretty-ms": "~7.0.0",
