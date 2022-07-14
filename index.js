@@ -2,8 +2,8 @@
 
 const createTop = require('process-top')
 
-const process = require('./lib/process')
-const os = require('./lib/os')
+const process = require('./src/process')
+const os = require('./src/os')
 
 module.exports = opts => {
   const top = createTop(opts)

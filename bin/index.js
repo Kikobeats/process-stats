@@ -3,58 +3,54 @@
 'use strict'
 
 const output = require('neat-log/output')
+const picocolors = require('picocolors')
 const onExit = require('signal-exit')
 const neatLog = require('neat-log')
-const chalk = require('chalk')
+const mri = require('mri')
 
-const pkg = require('../package.json')
 const stats = require('..')()
 
 onExit(stats.destroy)
 
 const prettyArray = arr => {
-  const separator = chalk.white(', ')
-  return `${chalk.gray(arr.join(separator))}`
+  const separator = picocolors.white(', ')
+  return `${picocolors.gray(arr.join(separator))}`
 }
 
 const prettyPercent = val => {
-  const str = `${chalk.white('(')}${val}%${chalk.white(')')}`
-  return chalk.grey(str)
+  const str = `${picocolors.white('(')}${val}%${picocolors.white(')')}`
+  return picocolors.gray(str)
 }
 
 const style = {
   minimal: () => {
     const { uptime, cpu, delay, loadAvg, memTotal, memUsed } = stats()
-    return `${uptime.pretty} | cpu: ${chalk.gray(cpu.pretty)} | mem: ${chalk.gray(
+    return `${uptime.pretty} | cpu: ${picocolors.gray(cpu.pretty)} | mem: ${picocolors.gray(
       memUsed.pretty
-    )} / ${chalk.gray(memTotal.pretty)} ${prettyPercent(memUsed.percent)} | delay: ${chalk.gray(
-      delay.pretty
-    )} | loadavg: ${prettyArray(loadAvg.normalized)}`
+    )} / ${picocolors.gray(memTotal.pretty)} ${prettyPercent(
+      memUsed.percent
+    )} | delay: ${picocolors.gray(delay.pretty)} | loadavg: ${prettyArray(loadAvg.normalized)}`
   },
   verbose: () => {
     const { uptime, delay, loadAvg, memFree, memTotal, memUsed } = stats()
 
     return `
-    delay          : ${chalk.gray(delay.pretty)}
+    delay          : ${picocolors.gray(delay.pretty)}
     loadAvg        : [${prettyArray(loadAvg.normalized)}]
-    memFree        : ${chalk.gray(memFree.pretty)} ${prettyPercent(memFree.percent)}
-    memUsed        : ${chalk.gray(memUsed.pretty)} ${prettyPercent(memUsed.percent)}
-    memTotal       : ${chalk.gray(memTotal.pretty)} ${prettyPercent(memTotal.percent)}
-    uptime         : ${chalk.gray(uptime.pretty)}`
+    memFree        : ${picocolors.gray(memFree.pretty)} ${prettyPercent(memFree.percent)}
+    memUsed        : ${picocolors.gray(memUsed.pretty)} ${prettyPercent(memUsed.percent)}
+    memTotal       : ${picocolors.gray(memTotal.pretty)} ${prettyPercent(memTotal.percent)}
+    uptime         : ${picocolors.gray(uptime.pretty)}`
   }
 }
 
-const cli = require('meow')({
-  pkg,
-  flags: {
-    verbose: {
-      type: 'boolean',
-      default: false
-    }
+const { _: input, ...flags } = mri(process.argv.slice(2), {
+  default: {
+    verbose: false
   }
 })
 
-const { verbose } = cli.flags
+const { verbose } = flags
 
 const neat = neatLog(() => output(style[verbose ? 'verbose' : 'minimal']()))
 
