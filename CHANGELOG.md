@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.7.0](https://github.com/kikobeats/process-stats/compare/v3.6.0...v3.7.0) (2022-07-16)
+
+
+### Features
+
+* use faster memory resolution ([994cf6b](https://github.com/kikobeats/process-stats/commit/994cf6b90ec6c072ed75449754108b8c8c7ad171))
+
 ## [3.6.0](https://github.com/kikobeats/process-stats/compare/v3.5.6...v3.6.0) (2022-07-14)
 
 ### [3.5.6](https://github.com/kikobeats/process-stats/compare/v3.5.5...v3.5.6) (2021-02-23)
