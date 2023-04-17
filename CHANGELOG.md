@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.7.2 (2023-04-17)
+
 ### 3.7.1 (2023-03-12)
 
 ## [3.7.0](https://github.com/kikobeats/process-stats/compare/v3.6.0...v3.7.0) (2022-07-16)
