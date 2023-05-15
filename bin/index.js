@@ -3,8 +3,8 @@
 'use strict'
 
 const output = require('neat-log/output')
+const { onExit } = require('signal-exit')
 const picocolors = require('picocolors')
-const onExit = require('signal-exit')
 const neatLog = require('neat-log')
 const mri = require('mri')
 
