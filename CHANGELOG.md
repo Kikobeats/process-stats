@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 3.7.4 (2023-05-15)
+
+
+### Bug Fixes
+
+* signal-exist export ([#45](https://github.com/kikobeats/process-stats/issues/45)) ([23bb701](https://github.com/kikobeats/process-stats/commit/23bb70163cb456ca5fe12649918ff317f1bd25df))
+
 ### 3.7.3 (2023-04-17)
 
 ### 3.7.2 (2023-04-17)
