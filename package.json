@@ -2,7 +2,7 @@
   "name": "process-stats",
   "description": "Display dynamic real-time information about running Node.js process",
   "homepage": "https://github.com/kikobeats/process-stats",
-  "version": "3.7.7",
+  "version": "3.7.8",
   "main": "index.js",
   "bin": {
     "process-stats": "bin/index.js"
